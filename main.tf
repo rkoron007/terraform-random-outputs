@@ -1,13 +1,4 @@
 terraform {
-  cloud {
-    hostname     = "tfe.bmcclain.com"
-    organization = "bmcclain"
-
-    workspaces {
-      name = "test-workspace"
-    }
-  }
-
   required_providers {
     random = {
       source  = "hashicorp/random"
