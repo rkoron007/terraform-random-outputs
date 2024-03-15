@@ -17,7 +17,7 @@ variable "my_key" {
 }
 
 resource "random_pet" "some_value" {
-  count  = 4
+  count  = 3
   length = 4
 }
 
