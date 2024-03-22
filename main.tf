@@ -11,16 +11,18 @@ provider "random" {
   # Configuration options
 }
 
-variable "my_key" {
-  type    = string
-  default = "my_default"
+variable "strings" {
+  type    = number
+  description = "Number of strings to generate"
+  default = 3
 }
 
 resource "random_pet" "some_value" {
-  count  = 3
+  count  = var.strings
   length = 4
 }
 
 output "random_value" {
   value = random_pet.some_value.*.id
+  description = "Generated strings"
 }
