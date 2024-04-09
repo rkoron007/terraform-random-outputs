@@ -2,7 +2,7 @@ terraform {
   required_providers {
     random = {
       source  = "hashicorp/random"
-      version = "3.5.1"
+      version = "3.6.0"
     }
   }
 }
@@ -11,18 +11,12 @@ provider "random" {
   # Configuration options
 }
 
-variable "strings" {
-  type    = number
-  description = "Number of strings to generate"
-  default = 3
-}
-
 resource "random_pet" "some_value" {
   count  = var.strings
-  length = 4
+  length = var.length
 }
 
 output "random_value" {
-  value = random_pet.some_value.*.id
+  value       = random_pet.some_value.*.id
   description = "Generated strings"
 }
