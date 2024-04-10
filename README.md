@@ -24,8 +24,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_length"></a> [length](#input\_length) | Length of each random string | `number` | `4` | no |
-| <a name="input_strings"></a> [strings](#input\_strings) | Number of strings to generate | `number` | `3` | no |
+| <a name="input_length"></a> [length](#input\_length) | Length of each random string | `number` | n/a | yes |
+| <a name="input_strings"></a> [strings](#input\_strings) | Number of strings to generate | `number` | n/a | yes |
 
 ## Outputs
 
