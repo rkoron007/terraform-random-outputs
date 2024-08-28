@@ -20,3 +20,7 @@ output "random_value" {
   value       = random_pet.some_value.*.id
   description = "Generated strings"
 }
+
+output "new_output" {
+  value = "some new output"
+}
